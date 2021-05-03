@@ -1,0 +1,449 @@
+/**
+ * @name Horizontal Server List
+ * @author wohlhabend
+ * @version 1.5.0
+ * @description Moves the server list from the left to the top of Discord. Compatible with Server Folders
+ * @source https://github.com/LifeIsAParadox/betterdiscord
+*/
+
+@import url("https://goldenlys.github.io/BetterDiscord-Elysia/HorizontalServerList.css");
+@import url("https://goldenlys.github.io/BetterDiscord-Elysia/GIBBUHSLFIX.css");
+
+/* letter */
+
+/*random text color
+
+@keyframes  random-color{
+	100%,0%{
+		color: rgb(255,0,0);
+	}
+	8%{
+		color: rgb(255,127,0);
+	}
+	16%{
+		color: rgb(255,255,0);
+	}
+	25%{
+		color: rgb(127,255,0);
+	}
+	33%{
+		color: rgb(0,255,0);
+	}
+	41%{
+		color: rgb(0,255,127);
+	}
+	50%{
+		color: rgb(0,255,255);
+	}
+	58%{
+		color: rgb(0,127,255);
+	}
+	66%{
+		color: rgb(0,0,255);
+	}
+	75%{
+		color: rgb(127,0,255);
+	}
+	83%{
+		color: rgb(255,0,255);
+	}
+	91%{
+		color: rgb(255,0,127);
+	}
+}
+.folder-1hbNCn .closedFolderIconWrapper-2sTcE6:after{
+	animation: random-color 2.5s linear infinite ;
+}
+*/
+
+.folder-1hbNCn[aria-label^="A"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="a"] .closedFolderIconWrapper-2sTcE6:after{
+content: "A";
+color: rgb(66%, 72%, 59%);
+animation-delay: -1s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="B"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="b"] .closedFolderIconWrapper-2sTcE6:after{
+content: "B";
+color: rgb(56%, 91%, 42%);
+animation-delay: -2s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="C"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="c"] .closedFolderIconWrapper-2sTcE6:after{
+content: "C";
+color: rgb(63%, 91%, 9%);
+animation-delay: -3s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="D"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="d"] .closedFolderIconWrapper-2sTcE6:after{
+content: "D";
+color: rgb(39%, 73%, 50%);
+animation-delay: -4s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="E"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="e"] .closedFolderIconWrapper-2sTcE6:after{
+content: "E";
+color: rgb(86%, 79%, 0%);
+animation-delay: -5s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="F"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="f"] .closedFolderIconWrapper-2sTcE6:after{
+content: "F";
+color: rgb(55%, 11%, 40%);
+animation-delay: -6s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="G"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="g"] .closedFolderIconWrapper-2sTcE6:after{
+content: "G";
+color: rgb(76%, 95%, 47%);
+animation-delay: -7s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="H"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="h"] .closedFolderIconWrapper-2sTcE6:after{
+content: "H";
+color: rgb(90%, 99%, 33%);
+animation-delay: -8s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="I"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="i"] .closedFolderIconWrapper-2sTcE6:after{
+content: "I";
+color: rgb(38%, 52%, 64%);
+animation-delay: -9s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="J"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="j"] .closedFolderIconWrapper-2sTcE6:after{
+content: "J";
+color: rgb(16%, 24%, 44%);
+animation-delay: -10s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="K"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="k"] .closedFolderIconWrapper-2sTcE6:after{
+content: "K";
+color: rgb(47%, 73%, 51%);
+animation-delay: -11s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="L"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="l"] .closedFolderIconWrapper-2sTcE6:after{
+content: "L";
+color: rgb(40%, 37%, 29%);
+animation-delay: -12s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="M"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="m"] .closedFolderIconWrapper-2sTcE6:after{
+content: "M";
+color: rgb(28%, 28%, 96%);
+animation-delay: -13s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="N"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="n"] .closedFolderIconWrapper-2sTcE6:after{
+content: "N";
+color: rgb(36%, 22%, 12%);
+animation-delay: -14s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="O"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="o"] .closedFolderIconWrapper-2sTcE6:after{
+content: "O";
+color: rgb(35%, 77%, 30%);
+animation-delay: -15s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="P"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="p"] .closedFolderIconWrapper-2sTcE6:after{
+content: "P";
+color: rgb(55%, 14%, 90%);
+animation-delay: -16s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="Q"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="q"] .closedFolderIconWrapper-2sTcE6:after{
+content: "Q";
+color: rgb(0%, 52%, 82%);
+animation-delay: -17s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="R"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="r"] .closedFolderIconWrapper-2sTcE6:after{
+content: "R";
+color: rgb(89%, 36%, 46%);
+animation-delay: -18s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="S"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="s"] .closedFolderIconWrapper-2sTcE6:after{
+content: "S";
+color: rgb(48%, 17%, 91%);
+animation-delay: -19s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="T"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="t"] .closedFolderIconWrapper-2sTcE6:after{
+content: "T";
+color: rgb(96%, 93%, 52%);
+animation-delay: -20s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="U"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="u"] .closedFolderIconWrapper-2sTcE6:after{
+content: "U";
+color: rgb(7%, 61%, 94%);
+animation-delay: -21s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="V"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="v"] .closedFolderIconWrapper-2sTcE6:after{
+content: "V";
+color: rgb(87%, 30%, 36%);
+animation-delay: -22s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="W"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="w"] .closedFolderIconWrapper-2sTcE6:after{
+content: "W";
+color: rgb(23%, 75%, 97%);
+animation-delay: -23s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="X"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="x"] .closedFolderIconWrapper-2sTcE6:after{
+content: "X";
+color: rgb(70%, 13%, 26%);
+animation-delay: -24s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="Y"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="y"] .closedFolderIconWrapper-2sTcE6:after{
+content: "Y";
+color: rgb(55%, 12%, 58%);
+animation-delay: -25s;
+font-weight: bold;
+}
+.folder-1hbNCn[aria-label^="Z"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="z"] .closedFolderIconWrapper-2sTcE6:after{
+content: "Z";
+color: rgb(4%, 41%, 46%);
+animation-delay: -26s;
+font-weight: bold;
+}
+
+.folder-1hbNCn[aria-label^="0"] .closedFolderIconWrapper-2sTcE6:after {
+    content: "0";
+color: rgb(39%, 47%, 62%);
+animation-delay: -27s;
+font-weight: bold;
+}
+
+.folder-1hbNCn[aria-label^="1"] .closedFolderIconWrapper-2sTcE6:after {
+    content: "1";
+color: rgb(33%, 79%, 46%);
+animation-delay: -28s;
+font-weight: bold;
+}
+
+.folder-1hbNCn[aria-label^="2"] .closedFolderIconWrapper-2sTcE6:after {
+    content: "2";
+color: rgb(52%, 8%, 40%);
+animation-delay: -29s;
+font-weight: bold;
+}
+
+.folder-1hbNCn[aria-label^="3"] .closedFolderIconWrapper-2sTcE6:after {
+    content: "3";
+color: rgb(20%, 69%, 41%);
+animation-delay: -30s;
+font-weight: bold;
+}
+
+.folder-1hbNCn[aria-label^="4"] .closedFolderIconWrapper-2sTcE6:after {
+    content: "4";
+color: rgb(100%, 97%, 13%);
+animation-delay: -31s;
+font-weight: bold;
+}
+
+.folder-1hbNCn[aria-label^="5"] .closedFolderIconWrapper-2sTcE6:after {
+    content: "5";
+color: rgb(21%, 66%, 42%);
+animation-delay: -32s;
+font-weight: bold;
+}
+
+.folder-1hbNCn[aria-label^="6"] .closedFolderIconWrapper-2sTcE6:after {
+    content: "6";
+color: rgb(10%, 68%, 52%);
+animation-delay: -33s;
+font-weight: bold;
+}
+
+.folder-1hbNCn[aria-label^="7"] .closedFolderIconWrapper-2sTcE6:after {
+    content: "7";
+color: rgb(60%, 72%, 93%);
+animation-delay: -34s;
+font-weight: bold;
+}
+
+.folder-1hbNCn[aria-label^="8"] .closedFolderIconWrapper-2sTcE6:after {
+    content: "8";
+color: rgb(21%, 97%, 78%);
+animation-delay: -35s;
+font-weight: bold;
+}
+
+.folder-1hbNCn[aria-label^="9"] .closedFolderIconWrapper-2sTcE6:after {
+    content: "9";
+color: rgb(1%, 88%, 93%);
+animation-delay: -36s;
+font-weight: bold;
+}
+
+.folder-1hbNCn[aria-label^="#"] .closedFolderIconWrapper-2sTcE6:after {
+    content: "#";
+color: rgb(60%, 48%, 13%);
+animation-delay: -37s;
+font-weight: bold;
+}
+/* square avatar
+.avatar-1BDn8e, .icon-27yU2q, .avatar-VxgULZ, .avatarHint-1qgaV3, .avatar-3elDyV, .avatarDefault-35WC3R, .avatarSpeaking-1wJCNq, .container-2td-dC *, .button-OhfaWu.wrapper-1BJsBx, .iconInactive-98JN5i, .avatarWrapperNormal-3wFMbf, .avatarUploaderInner-3UNxY3, .systemPad-3UxEGl>.listItem-GuPuDH:first-child .svg-1X37T1 {
+    border-radius: 8.5px !important;
+}
+*/
+
+/* css */
+:root {
+    --ServerSize: 50px;
+    --ServerColumns: 1;
+    --FoldersOpen: '📂';
+    --Folders: '🖿';
+}
+.platform-web div[class^=scroller-] {
+    padding: 0;
+}
+
+.expandedFolderBackground-1cujaW {
+	background: transparent !important;
+    -webkit-box-shadow: none !important;
+    border-radius: 5px;
+	min-height: 35px;
+}
+
+.pill-31IEus .item-2hkk8m {
+    border-radius: 5px;
+}
+
+.closedFolderIconWrapper-2sTcE6:after {
+    position: absolute;
+    content: var(--Folders);
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    left: 0;
+    top: 5px;
+    right: 0;
+}
+
+.expandedFolderIconWrapper-Huv7rA:after {
+    position: absolute;
+    content: var(--FoldersOpen);
+    font-size: 25px;
+    line-height: 1.8;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.popoutTop-3WSJtH{
+	left: 150px !important;
+	background: black !important;
+}
+
+.header-2V-4Sw, .pageWrapper-1PgVDX, #app-mount .wrapper-3Njo_c [role=group], .codeRedemptionRedirect-1wVR4b, .paymentPane-3bwJ6A, .paginator-166-09, .folderIconWrapper-1_bOZe, .message-2qRu38, .footer-1kmXd4, .header-39GIC8, .scroller-2XE8rp, .footer-3rDWdC, .footer-3mqk7D, .scroller-1IIF0A, .nowPlayingColumn-2sl4cE, .folder-1hbNCn, .selected-aXhQR6 .layout-2DM8Md, .standardSidebarView-3F1I7i, .ui-tab-bar-separator, .contentRegionScroller-26nc1e, .layer-3QrUeG, .scroller-1JbKMe, .app-2rEoOp, div[class^=scroller-], .wrapper-1Rf91z, .container-PNkimc, .messages-3amgkR, .members-1998pB, .channelTextArea-rNsIhG, .panels-j1Uci_, .privateChannels-1nO12o {
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+}
+.folderIconWrapper-1_bOZe {
+    border-radius: .75em !important;
+    margin: 1px;
+}
+
+#bd-pub-button {
+    border-radius: 10px !important;
+    background: url("https://goldenlys.github.io/ThemeGen/img/public.png");
+    color: #ffffff;
+    font-size: 12px;
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: background-color .3s,color .3s !important;
+	height: var(--ServerSize);
+	width: var(--ServerSize);
+}
+
+#bd-pub-button, .svg-1X37T1, .wrapper-25eVIn, .childWrapper-anI2G9, .tutorialContainer-2sGCg9>.listItem-GuPuDH>div[class^=listItemWrapper-]>div {
+    width: var(--ServerSize);
+    height: var(--ServerSize);
+}
+
+#bd-pub-li {
+	top: -60px;
+	left: 60px;
+	z-index: 2;
+}
+.guildSeparator-33mFX6{
+	margin-left:30px;
+    background: transparent;
+}
+
+.guilds-1SWlCJ div[class^=scroller-] {
+	overflow: unset !important;
+}
+
+.chat-3bRxxu>.title-3qD0b->.children-19S4PO>.iconWrapper-2OrFZ1,
+ .guildDetail-1nRKNE .channel-2hXUOG svg, .guildIcon-GuAC7C,  .closedFolderIconWrapper-2sTcE6 div, .expandedFolderIconWrapper-Huv7rA svg, .sidebar-2K8pFh>div.panels-j1Uci_>div>div>button:nth-child(3)>.contents-18-Yxp>svg, .pro-1T8RK7, .tip-2ab612, .total-3tKGEB:after, .footer-1kmXd4, .sidebar-2K8pFh .scrollerWrap-2lJEkd .scroller-2FKFPG a[href="/store"], .guildSeparator-3s64Iy,.userSettingsSecurityImage-21pI_Q, .sidebar-2K8pFh .scrollerWrap-2lJEkd .scroller-2FKFPG a[href="/channels/@me"] .content-3QAtGj, .sidebar-2K8pFh .scrollerWrap-2lJEkd .scroller-2FKFPG a[href="/library"] .content-3QAtGj {
+    display: none !important;
+}
+
+.guilds-1SWlCJ div[class^=scroller-]>div[aria-label]>.listItem-GuPuDH, .guilds-1SWlCJ div[class^=scroller-]>div[aria-label]>.wrapper-3Njo_c {
+    margin: 10px 0 0 10px !important;
+    width: var(--ServerSize) !important;
+    border-radius: .25em;
+}
+
+.guilds-1SWlCJ .scroller-2FKFPG>.listItem-GuPuDH:first-child+.listItem-GuPuDH:not([style]), .guilds-1SWlCJ .scroller-2FKFPG>div[style]:not(.listItem-GuPuDH)+.listItem-GuPuDH {
+    margin: 0px;
+    width: auto !important;
+}
+
+#app-mount .wrapper-3Njo_c [role=group] {
+    height: unset !important;
+}
+
+#app-mount .guilds-1SWlCJ div[class^=scroller-]>div[style*="opacity: 1;"] {
+    margin: 10px;
+    height: var(--ServerSize) !important;
+}
+
+.guilds-1SWlCJ .scroller-2FKFPG>.listItem-GuPuDH:first-child+.listItem-GuPuDH:not([style]), .guilds-1SWlCJ .scroller-2FKFPG>div[style]:not(.listItem-GuPuDH)+.listItem-GuPuDH {
+    margin: 0px;
+    width: auto !important;
+}
+
+.wrapper-3Njo_c .pill-31IEus, .tutorialContainer-30WoTp+.listItem-GuPuDH .pill-3YxEhL, .tutorialContainer-30WoTp+.listItem-GuPuDH+.listItem-GuPuDH .pill-3YxEhL, .guilds-1SWlCJ div[class^=scroller-]>div[aria-label]>.listItem-GuPuDH .pill-31IEus, .tutorialContainer-2sGCg9 .pill-2uzAFe {
+    left: -10px
+}
+
+.tutorialContainer-2sGCg9, .tutorialContainer-30WoTp, .tutorialContainer-30WoTp+.listItem-GuPuDH, .tutorialContainer-30WoTp+.listItem-GuPuDH+.listItem-GuPuDH+.listItem-GuPuDH {
+    margin: 10px 0 0 10px !important;
+    height: var(--ServerSize);
+}
+.tutorialContainer-2sGCg9 .listItem-GuPuDH, .tutorialContainer-30WoTp .listItem-GuPuDH, 
+.tutorialContainer-30WoTp+.listItem-GuPuDH,
+ .tutorialContainer-30WoTp+.listItem-GuPuDH+.listItem-GuPuDH+.listItem-GuPuDH {
+    width: var(--ServerSize);
+}
+.listItem-GuPuDH {
+    width: unset;
+}
+
+.tutorialContainer-2sGCg9+div:not(.listItem-GuPuDH):not(.wrapper-3Njo_c) {
+    margin-left: 0px
+}
+
+.thin-1ybCId::-webkit-scrollbar-thumb {
+    border: none;
+    border-radius: 5px;
+}
+
+.container-2lgZY8 {
+    flex-direction: column !important;
+    display: flex !important;
+}
