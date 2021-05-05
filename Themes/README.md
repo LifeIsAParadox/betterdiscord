@@ -6,9 +6,9 @@ i use a bit of code from [GoldenLys](https://github.com/GoldenLys) [aerobase.css
 
 ## BetterDiscord Download
 
-[Normal ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Theme/HorizontalServerList.theme.css)      : [https://betterdiscord.net/ghdl?id=](https://betterdiscord.net/ghdl?id=)  
-[Rainbow color ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Theme/HorizontalServerList-rainbowcolor.theme.css): [https://betterdiscord.net/ghdl?id=](https://betterdiscord.net/ghdl?id=)  
-[Normal folder ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Theme/HorizontalServerList-normalfolder.theme.css): [https://betterdiscord.net/ghdl?id=](https://betterdiscord.net/ghdl?id=)  
+[Normal ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerList.theme.css)      : [https://betterdiscord.net/ghdl?id=](https://betterdiscord.net/ghdl?id=)  
+[Rainbow color ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerList-rainbowcolor.theme.css): [https://betterdiscord.net/ghdl?id=](https://betterdiscord.net/ghdl?id=)  
+[Normal folder ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerList-normalfolder.theme.css): [https://betterdiscord.net/ghdl?id=](https://betterdiscord.net/ghdl?id=)  
 
 ## Preview
 [Normal ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerList.theme.css)  
