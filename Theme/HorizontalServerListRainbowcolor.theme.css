@@ -1,5 +1,5 @@
 /**
- * @name Horizontal Server List
+ * @name Horizontal Server List - Rainbow
  * @author wohlhabend
  * @version 1.5.1
  * @description Moves the server list from the left to the top of Discord. Compatible with Server Folders
@@ -9,6 +9,52 @@
 
 @import url("https://goldenlys.github.io/BetterDiscord-Elysia/HorizontalServerList.css");
 @import url("https://goldenlys.github.io/BetterDiscord-Elysia/GIBBUHSLFIX.css");
+
+/* letter */
+
+/*random text color*/
+
+@keyframes  random-color{
+	100%,0%{
+		color: rgb(255,0,0);
+	}
+	8%{
+		color: rgb(255,127,0);
+	}
+	16%{
+		color: rgb(255,255,0);
+	}
+	25%{
+		color: rgb(127,255,0);
+	}
+	33%{
+		color: rgb(0,255,0);
+	}
+	41%{
+		color: rgb(0,255,127);
+	}
+	50%{
+		color: rgb(0,255,255);
+	}
+	58%{
+		color: rgb(0,127,255);
+	}
+	66%{
+		color: rgb(0,0,255);
+	}
+	75%{
+		color: rgb(127,0,255);
+	}
+	83%{
+		color: rgb(255,0,255);
+	}
+	91%{
+		color: rgb(255,0,127);
+	}
+}
+.folder-1hbNCn .closedFolderIconWrapper-2sTcE6:after{
+	animation: random-color 2.5s linear infinite ;
+}
 
 .folder-1hbNCn[aria-label^="A"] .closedFolderIconWrapper-2sTcE6:after, .folder-1hbNCn[aria-label^="a"] .closedFolderIconWrapper-2sTcE6:after{
 content: "A";
