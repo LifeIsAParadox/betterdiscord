@@ -7,15 +7,15 @@ i use a bit of code from [GoldenLys](https://github.com/GoldenLys) [aerobase.css
 ## BetterDiscord Download
 
 [Normal ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerList.theme.css)      : [https://betterdiscord.net/ghdl?id=](https://betterdiscord.net/ghdl?id=)  
-[Rainbow color ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerList-rainbowcolor.theme.css): [https://betterdiscord.net/ghdl?id=](https://betterdiscord.net/ghdl?id=)  
-[Normal folder ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerList-normalfolder.theme.css): [https://betterdiscord.net/ghdl?id=](https://betterdiscord.net/ghdl?id=)  
+[Rainbow color ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerListRainbowcolor.theme.css): [https://betterdiscord.net/ghdl?id=](https://betterdiscord.net/ghdl?id=)  
+[Normal folder ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerListNormalfolder.theme.css): [https://betterdiscord.net/ghdl?id=](https://betterdiscord.net/ghdl?id=)  
 
 ## Preview
 [Normal ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerList.theme.css)  
-![Preview](images/normal.png?raw=true)  
+![Normal](images/normal.png?raw=true)  
 
-[Rainbow color ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerList-rainbowcolor.theme.css)
-![ServerFolders Support](images/rainbow.gif?raw=true)
+[Rainbow color ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerListRainbowcolor.theme.css)
+![Rainbow color](images/rainbow.gif?raw=true)
 
-[Normal folder ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerList-normalfolder.theme.css)
-![Server Icon Sizes](images/normal-folder.png?raw=true)
+[Normal folder ](https://github.com/LifeIsAParadox/betterdiscord/blob/master/Themes/HorizontalServerListNormalfolder.theme.css)
+![Normal folder](images/normal-folder.png?raw=true)
